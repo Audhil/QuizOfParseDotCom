@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zoho.puzzle.PlayerTaskActivity$PlayerTaskFragment" >
+
+    <com.mns.quiz.view.PuzzleViewPager
+        android:id="@+id/myviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_buzzle_file__layout"
+        android:layout_below="@+id/editText1"
+        android:layout_gravity="center"
+        android:overScrollMode="never" />
+    <RelativeLayout
+        android:id="@+id/info_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_buzzle_file__layout"
+        android:layout_below="@+id/editText1"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="@android:color/darker_gray" >
+
+            <TextView
+                android:id="@+id/info_msg_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:text="@string/no_more_item" />
+
+            <Button
+                android:id="@+id/refresh_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_msg_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/refresh" />
+            
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/add_buzzle_file__layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/border_button"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboardview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:ems="10" />
+
+</RelativeLayout>

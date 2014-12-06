@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zoho.quiz.MainActivity" >
+
+    <item
+        android:id="@+id/action_close"
+        android:orderInCategory="101"
+        android:title="Close"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText"/>
+    
+      
+
+</menu>

@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parse_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="20dp"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <EditText
+        android:id="@+id/login_username_input"
+        style="@style/QuizUI.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username" />
+
+    <EditText
+        android:id="@+id/login_password_input"
+        style="@style/QuizUI.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:fontFamily="sans-serif"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true" />
+
+   <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+          />
+
+    <Button
+        android:id="@+id/parse_login_button"
+        style="@style/QuizUI.Button"
+        android:layout_weight="0.5"
+        android:text="@string/login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/or" />
+
+    <Button
+        android:id="@+id/parse_signup_button"
+        style="@style/QuizUI.Button"
+        android:layout_weight="0.5"
+        android:text="@string/signup" />
+
+</LinearLayout>

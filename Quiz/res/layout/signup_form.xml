@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:layout_margin="20dp"
+   
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <EditText
+        android:id="@+id/signup_username_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/QuizUI.EditText"
+        android:hint="@string/username"></EditText>
+
+    <EditText
+        android:id="@+id/signup_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/QuizUI.EditText"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:fontFamily="sans-serif"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/signup_confirm_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/QuizUI.EditText"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:fontFamily="sans-serif"
+        android:hint="@string/reenter_password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/signup_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/QuizUI.EditText"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:hint="@string/sample_mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/signup_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/QuizUI.EditText"
+        android:layout_marginTop="@dimen/small_vertical_spacing"
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/create_account"
+        style="@style/QuizUI.Button"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/bottom_create_account_margin_top"
+        android:text="@string/create_account" />
+
+</LinearLayout>

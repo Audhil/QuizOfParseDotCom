@@ -1,0 +1,7 @@
+<!-- Q1.	Why used this permission-group -->	manifest	
+<!-- Q2.	Why used this broadcast receiver eventhough you used dynamic BroadCast Receiver ?-->	manifest
+<!-- Q3.	Purpose of fragments in your project - Reason to use fragments ?-->whole project
+<!-- Q4.	some thing about style ?-->whole project
+<!-- Q5.	set retain state - true for fragments ?-->MainViewFragment
+<!-- Q6.	what is android.inputmethodservice.KeyboardView ?-->MainViewFragment
+<!-- Q7.	https://github.com/Kamaros/ProjectsPlease/tree/master/app/libs/Parse-1.6.0 ?-->

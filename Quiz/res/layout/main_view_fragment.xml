@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zoho.puzzle.MainActivity$PlaceholderFragment" >
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_buzzle_file__layout"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/darker_gray"
+        android:divider="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_buzzle_file__layout"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/darker_gray"
+        android:divider="@android:color/transparent"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/info_msg_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/no_more_item" />
+
+        <Button
+            android:id="@+id/refresh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_msg_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/refresh" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/add_buzzle_file__layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/border_button"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/add_buzzle_file_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_default_holo_light"
+            android:text="@string/browse" />
+    </LinearLayout>
+
+</RelativeLayout>
